@@ -1,0 +1,49 @@
+<!--
+ * File: app.js
+ * Author: Molnár János
+ * Copyright: 2022, Molnár János
+ * Group: Szoft I/2
+ * Date: 2022-04-11
+ * Github: https://github.com/jony1337
+ * Licenc: GNU GPL
+-->
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feladat 0352</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center mt-4"
+    >
+      <div class="row">
+        <div class="col-md-10 offset-md-3">
+          <div class="card shadow">           
+            <div class="card-body">
+              <h5 class="card-title">BMR kalkulátor</h5>
+              <form id="formBMR">
+                <label for="testZsir">Testzsírszázalék</label>
+                <input type="text"id="testZsir" class="form-control" name="testZsir" autofocus required/><br />
+                <label for="testTomeg">Testtömeg (Kg)</label>
+                <input type="text" id="testTomeg" class="form-control" required /><br/>
+                <button id="szamitKaloria" type="button" class="btn btn-dark">Számít</button> <br/>
+                <label for="kaloria" class="mt-3">Kalória</label>
+                <input type="text" id="kaloria" class="form-control" /><br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nevjegy">Molnár János, 2022-04-11<br/>Szoft I/2</div>
+
+    <script src="bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
